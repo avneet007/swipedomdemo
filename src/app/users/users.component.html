@@ -1,0 +1,14 @@
+<table border="1"  align="center">
+   
+    <tr>
+        <th>Profile picture</th>
+        <th>Name</th>
+        <th>Github Link</th>
+    </tr>
+    <tr *ngFor="let item of usersData">
+        <td align="center"><img src={{item.avatar_url}} alt="" border=3 height=100 width=100></td>
+        <td align="center">{{item.login}}</td>
+        <td align="center"><a href="{{item.html_url}}" target="_blank">{{item.html_url}}</a></td>
+    </tr>
+   
+</table>
